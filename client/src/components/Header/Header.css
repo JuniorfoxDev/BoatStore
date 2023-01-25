@@ -1,0 +1,117 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  z-index: 99;
+  padding: 0 20px;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 0 40px;
+    height: 60px;
+  }
+}
+.header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .header .header-content {
+    padding: 15px 30px;
+  }
+}
+.header .header-content .item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.header .header-content .left {
+  display: none;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .header .header-content .left {
+    display: flex;
+  }
+}
+.header .header-content .center {
+  font-size: 24px;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-content .center span {
+  color: rgb(237, 0, 0);
+}
+@media only screen and (min-width: 768px) {
+  .header .header-content .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+  }
+  .header .header-content .center span {
+    color: rgb(237, 0, 0);
+  }
+}
+.header .header-content .right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header .header-content .right .icons {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.header .header-content .right .cartIcon {
+  position: relative;
+}
+.header .header-content .right .cartIcon span {
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #2879fe;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header.sticky_header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transform: translateY(-50px);
+  -webkit-animation: stickyHeader 0.8s ease forwards;
+          animation: stickyHeader 0.8s ease forwards;
+}
+
+@-webkit-keyframes stickyHeader {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes stickyHeader {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Header.css.map */

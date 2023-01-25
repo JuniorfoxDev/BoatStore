@@ -1,0 +1,95 @@
+@import "../../css-config/mixins.scss";
+.single_product{
+    margin: 10px 60px;
+    @include md{
+        margin: 75px 80px;
+    }
+    .layout{
+        min-width: calc(100% - 20px);
+        margin: 0 auto;
+        @include md {
+            max-width: 1200px;
+        }
+        .single_container{
+            display: flex;
+            flex-direction: column;
+            @include md{
+                flex-direction: row;
+            }
+            .left{
+                width: 100%;
+                flex-shrink: 0;
+                background-color: rgba(0,0,0,0.5);
+                @include md{
+                    width: 400px;
+                    height: 400px;
+                }
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                @include md{
+                    padding: 0 80px;
+                }
+                .name{
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                    @include md{
+                        font-size: 32px;
+                    }
+                }
+                .rating{
+                    font-size: 18px;
+                }
+                .desc{
+                    font-size: 18px;
+                    margin: 10px  0;
+                }
+                .cart_button{
+                    display: flex;
+                    margin: 10px 0;
+                    flex-direction: column;
+                    .cart_quantity{
+                        margin-bottom: 20px;
+                        border: 1px solid rgba(0,0,0,0.8);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        button{
+                            font-size: 32px;
+                            background: none;
+                            border: none;
+                            padding: 0 20px;
+                            cursor: pointer;
+                            outline: none;
+                        }
+                        span{
+                            color: red;
+                            font-size: 20px;
+                        }
+                    }
+                    .add_cart{
+                        font-size: 16px;
+                        padding: 10px 25px;
+                        font-weight: bold;
+                        color: #fff;
+                        background-color: red;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+                }
+                .cart_category{
+                    margin: 20px 0;
+                }
+            }
+        }        
+    }
+}

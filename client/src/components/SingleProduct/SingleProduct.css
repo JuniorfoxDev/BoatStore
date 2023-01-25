@@ -1,0 +1,106 @@
+.single_product {
+  margin: 10px 60px;
+}
+@media only screen and (min-width: 768px) {
+  .single_product {
+    margin: 75px 80px;
+  }
+}
+.single_product .layout {
+  min-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .single_product .layout {
+    max-width: 1200px;
+  }
+}
+.single_product .layout .single_container {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .single_product .layout .single_container {
+    flex-direction: row;
+  }
+}
+.single_product .layout .single_container .left {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 768px) {
+  .single_product .layout .single_container .left {
+    width: 400px;
+    height: 400px;
+  }
+}
+.single_product .layout .single_container .left img {
+  width: 100%;
+  display: block;
+}
+.single_product .layout .single_container .right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .single_product .layout .single_container .right {
+    padding: 0 80px;
+  }
+}
+.single_product .layout .single_container .right .name {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .single_product .layout .single_container .right .name {
+    font-size: 32px;
+  }
+}
+.single_product .layout .single_container .right .rating {
+  font-size: 18px;
+}
+.single_product .layout .single_container .right .desc {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.single_product .layout .single_container .right .cart_button {
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+}
+.single_product .layout .single_container .right .cart_button .cart_quantity {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+.single_product .layout .single_container .right .cart_button .cart_quantity button {
+  font-size: 32px;
+  background: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  outline: none;
+}
+.single_product .layout .single_container .right .cart_button .cart_quantity span {
+  color: red;
+  font-size: 20px;
+}
+.single_product .layout .single_container .right .cart_button .add_cart {
+  font-size: 16px;
+  padding: 10px 25px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.single_product .layout .single_container .right .cart_category {
+  margin: 20px 0;
+}/*# sourceMappingURL=SingleProduct.css.map */
